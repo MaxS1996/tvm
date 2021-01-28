@@ -234,6 +234,7 @@ def micro(model="unknown", options=None):
     trans_table = {
         "host": [],
         "stm32f746xx": ["-mcpu=cortex-m7", "-march=armv7e-m"],
+        "stm32l496xx":  ["-mcpu=cortex-m4", "-march=armv7e-m"]
     }
     opts = _merge_opts(
         trans_table[model] + ["-runtime=c", "--system-lib", f"-model={model}"],
