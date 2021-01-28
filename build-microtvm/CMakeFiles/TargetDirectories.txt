@@ -1,0 +1,16 @@
+/home/max/github/tvm/build-microtvm/CMakeFiles/install/strip.dir
+/home/max/github/tvm/build-microtvm/CMakeFiles/list_install_components.dir
+/home/max/github/tvm/build-microtvm/CMakeFiles/edit_cache.dir
+/home/max/github/tvm/build-microtvm/CMakeFiles/install.dir
+/home/max/github/tvm/build-microtvm/CMakeFiles/runtime.dir
+/home/max/github/tvm/build-microtvm/CMakeFiles/install/local.dir
+/home/max/github/tvm/build-microtvm/CMakeFiles/cpptest.dir
+/home/max/github/tvm/build-microtvm/CMakeFiles/host_standalone_crt.dir
+/home/max/github/tvm/build-microtvm/CMakeFiles/rebuild_cache.dir
+/home/max/github/tvm/build-microtvm/CMakeFiles/tvm_runtime.dir
+/home/max/github/tvm/build-microtvm/CMakeFiles/standalone_crt.dir
+/home/max/github/tvm/build-microtvm/CMakeFiles/crttest.dir
+/home/max/github/tvm/build-microtvm/CMakeFiles/tvm.dir
+/home/max/github/tvm/build-microtvm/CMakeFiles/intrinsics_gen.dir
+/home/max/github/tvm/build-microtvm/CMakeFiles/tvm_objs.dir
+/home/max/github/tvm/build-microtvm/CMakeFiles/tvm_runtime_objs.dir
