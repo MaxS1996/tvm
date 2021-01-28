@@ -910,9 +910,9 @@ struct PackedFuncValueConverter {
 #define TVM_DLL_EXPORT_PACKED_FUNC(ExportName, Function)                                    \
   extern "C" {                                                                              \
   TVM_DLL int ExportName(TVMValue* args, int* type_code, int num_args, TVMValue* out_value, \
-                         int* out_type_code);                                               \
+                         int* out_type_code, void* resource_handle);                        \
   int ExportName(TVMValue* args, int* type_code, int num_args, TVMValue* out_value,         \
-                 int* out_type_code) {                                                      \
+                 int* out_type_code, void* resource_handle) {                               \
     try {                                                                                   \
       ::tvm::runtime::TVMRetValue rv;                                                       \
       Function(::tvm::runtime::TVMArgs(args, type_code, num_args), &rv);                    \
@@ -963,7 +963,7 @@ struct PackedFuncValueConverter {
 #define TVM_DLL_EXPORT_TYPED_FUNC(ExportName, Function)                                     \
   extern "C" {                                                                              \
   TVM_DLL int ExportName(TVMValue* args, int* type_code, int num_args, TVMValue* out_value, \
-                         int* out_type_code) {                                              \
+                         int* out_type_code, void* resource_handle) {                       \
     try {                                                                                   \
       auto f = Function;                                                                    \
       using FType = ::tvm::runtime::detail::function_signature<decltype(f)>::FType;         \
